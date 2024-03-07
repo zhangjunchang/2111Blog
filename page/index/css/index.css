@@ -1,0 +1,411 @@
+/* 首页样式 */
+
+/* 版心效果 */
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+
+/* 主页背景色 */
+body {
+  /* 加载背景图 */
+  background: url(../../../img/20210809034821.jpg) no-repeat 50%;
+  /* 背景图垂直、水平均居中 */
+  background-position: center center;
+  /* 背景图不平铺 */
+  background-repeat: no-repeat;
+  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+  background-attachment: fixed;
+  /* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+  /* 设置背景颜色，背景图加载过程中会显示背景色 */
+  background-color: #464646;
+}
+
+/* 头部区域 */
+.header {
+  height: 48px;
+  background-color: #fff;
+}
+
+.header .wrapper {
+  /* padding-top: 29px; */
+  height: auto;
+  display: flex;
+}
+
+/* logo */
+.logo a {
+  display: block;
+  width: 80px;
+  height: 48px;
+  /* background-image: url(../images/logo.png); */
+  font-size: 0;
+}
+
+/* 导航 */
+.nav {
+  margin-left: 102px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav li {
+  margin-right: 24px;
+}
+
+.nav li div {
+  display: flex;
+  height: 48px;
+  width: 48px;
+
+}
+
+.nav li a {
+  padding: 0 10px;
+  line-height: 48px;
+  font-size: 14px;
+}
+
+/* active 类选择器，表示默认选中的a */
+.nav li a:hover {
+  background-color: #f0f0f5;
+}
+
+
+/* 搜索 */
+.search {
+  margin: auto;
+  display: flex;
+  margin-left: 64px;
+  width: 412px;
+  height: 32px;
+  background-color: #f3f5f7;
+  border-radius: 20px;
+  padding-left: 32px;
+}
+
+.search-padding {
+  padding: 0 30px;
+  height: 48px;
+  margin-top: 7px;
+}
+
+.search input {
+  flex: 1;
+  border: 0;
+  background-color: transparent;
+  /* 去掉表单控件的焦点框 */
+  outline: none;
+}
+
+/* ::placeholder 选中就是 placeholder 属性文字样式 */
+.search input::placeholder {
+  font-size: 14px;
+  color: #999;
+}
+
+/* 父级是flex布局,子级变成弹性盒子:加宽高生效 */
+.toolbar-search-button {
+  display: inline-block;
+  width: 88px;
+  height: 100%;
+  outline: 0;
+  border: 0 none;
+  border-radius: 0 16px 16px 0;
+  font-size: 14px;
+  line-height: 32px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  background-color: #fc5531;
+  text-align: left;
+}
+
+.search button:hover {
+  background-color: #fc1944;
+}
+
+.toolbar-search-button i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../images/white-search.png) no-repeat center center;
+  background-size: 100%;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  margin-left: 14px;
+}
+
+.toolbar-search-button span {
+  width: 28px;
+  height: 32px;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+
+.toolbar-container-right {
+  /* height: 48px; */
+  height: 48px !important;
+  line-height: 48px !important;
+}
+
+.toolbar-btns {
+  display: flex;
+  height: 100%;
+}
+
+.toolbar-btns-padding {
+  padding: 0 10px !important;
+}
+
+.toolbar-btns-img {
+  padding: 4px 20px 0 0 !important;
+  height: calc(100% - 4px);
+}
+
+.toolbar-btns-img a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #e8e8ed;
+  color: #222226;
+  border-radius: 50%;
+}
+
+.toolbar-btns-message a {
+  display: block;
+  height: 100%;
+  line-height: inherit;
+  color: #222226;
+  min-width: 32px;
+}
+
+.toolbar-btns-history a {
+  display: block;
+  min-width: 32px;
+  height: 48px;
+  line-height: 48px;
+  color: #222226;
+  position: relative;
+  text-align: center;
+}
+
+.toolbar-btns-release a {
+  display: block;
+  padding: 0 16px;
+  width: 80px;
+  padding-left: 36px;
+  background-image: url(../images/icon-write.png);
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-color: #fc5531;
+  color: #fff;
+  background-size: 16px;
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: calc((48px - 32px)/ 2);
+}
+
+.main-container {
+  position: relative;
+}
+
+.main-container-inner {
+  width: 1257px;
+  height: 600px;
+  position: absolute;
+  left: 12.5%;
+  padding-top: 140px;
+  /* display: flex; */
+}
+
+/* 文字盒子 */
+.main-container-inner-notes {
+  position: relative;
+  width: 410px;
+  height: 534px;
+  /* padding-top: 52px; */
+  /* background: #f7f7fc; */
+  float: left;
+}
+
+.inner-notes {
+  margin: 130px 0 8px;
+}
+
+.inner-notes h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 34px;
+  height: 34px;
+  font-size: 28px;
+  color: #fff !important;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.inner-notes p {
+  color: #fff !important;
+  font-size: 16px;
+  line-height: 34px;
+  height: 350px;
+  overflow-y: auto;
+}
+
+
+/* 登录盒子 */
+.main-container-inner-login {
+  position: relative;
+  width: 410px;
+  height: 534px;
+  padding-top: 52px;
+  background: #f7f7fc;
+  float: right;
+}
+
+.login-title {
+  height: 74px;
+  width: 100%;
+  background: #fff;
+}
+
+.login-title span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #222226;
+}
+
+.login-top {
+  height: 304px;
+  width: 100%;
+  background: #fff;
+  /* margin: 24px 0 6px; */
+}
+
+.phone-number {
+  width: 50%;
+  float: left;
+  font-size: 16px;
+  height: 22px;
+  line-height: 16px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  color: #999aaa;
+  font-weight: 600;
+  text-align: center;
+}
+
+.active {
+  color: #222226;
+}
+
+.account {
+  width: 50%;
+  float: right;
+  font-size: 16px;
+  height: 22px;
+  line-height: 16px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  color: #999aaa;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-bottom {
+  height: 40px;
+  width: 100%;
+  background: #fff;
+}
+
+.login-top-text {
+  height: 32px;
+}
+
+
+.login-form-item {
+  width: 362px;
+  height: 40px;
+  line-height: 40px;
+  background: #f5f6f7;
+  border-radius: 4px 4px;
+  padding: 0 16px;
+  color: #222226;
+  font-size: 14px;
+
+}
+
+.login-form-item-button {
+  width: 362px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px 4px;
+  color: #222226;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+/* 文字提示 */
+.login-form-item-tips {
+  width: 362px;
+  height: 17px;
+  margin-bottom: 40px;
+  padding-left: 10px;
+
+  color: #fc5531;
+}
+
+#login-number {
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.login-form-account {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #f5f6f7;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-form-number {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #f5f6f7;
+  outline: none;
+  font-size: 14px;
+}
+
+.base-button {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  background: #ee9b86;
+  border-radius: 20px 20px;
+  border: 0 none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}

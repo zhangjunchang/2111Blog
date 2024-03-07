@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2111BLOG</title>
+    <!-- 顺序要求：先清除再设置 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="header">
+        <div class="wrapper">
+            <!-- logo -->
+            <div class="logo">
+                <h1><a href="#">2111BLOG</a></h1>
+            </div>
+            <!-- 导航 -->
+            <div class="nav">
+                <ul>
+                    <li>
+                        <div><a href="#" class="active">首页</a></div>
+                    </li>
+                    <li>
+                        <div><a href="#">资源</a></div>
+                    </li>
+                    <li>
+                        <div><a href="#">博客</a></div>
+                    </li>
+                    <li>
+                        <div><a href="http://180.184.33.254:58000/">学习</a></div>
+                    </li>
+                    <li>
+                        <div><a href="#">社区</a></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 搜索 -->
+            <div class="search-padding">
+                <div class="search">
+                    <input type="text" placeholder="请输入关键词">
+                    <button class="toolbar-search-button">
+                        <i></i><span>搜索</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 用户 -->
+            <div class="toolbar-container-right">
+                <div class="toolbar-btns">
+                    <div class="toolbar-btns-padding toolbar-btns-img">
+                        <a href="#">
+                            <!-- <img src="./uploads/user-2.png" alt=""> -->
+                            登录
+                        </a>
+                    </div>
+                    <div class="toolbar-btns-padding toolbar-btns-message">
+                        <a href="#">消息</a>
+                    </div>
+                    <div class="toolbar-btns-padding toolbar-btns-history">
+                        <a href="#">历史</a>
+                    </div>
+                    <div class="toolbar-btns-padding toolbar-btns-release">
+                        <a href="#">发布</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 登录入口 -->
+    <div class="main-container">
+        <div class="main-container-inner">
+            <!-- 内部文字 -->
+            <div class="main-container-inner-notes">
+                <div class="inner-notes">
+                    <h4>2111BLOG</h4>
+                    <p>2111实验室，是一片充满创新与探索精神的科研沃土。这里集结了一群对人工智能怀揣热情的学生和教师，致力于在机器学习、深度学习、计算机视觉以及自然语言处理等前沿领域开展研究工作。在这里，学生们不仅能够将课堂上学到的理论知识付诸实践，更能通过参与实验室的研究项目来锤炼自己的问题解决能力和团队协作精神。我们坚信，通过在人工智能实验室的学习和研究，学生不仅能够紧跟时代的步伐，还能在未来的职业道路上展现出卓越的竞争力和创新能力。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 内部登录 -->
+            <div class="main-container-inner-login">
+                <div class="login-title">
+                    <span>小可爱快登录</span>
+                </div>
+                <div class="login-top">
+                    <div class="login-top-text">
+                        <div class="phone-number active">
+                            <span>免密登录</span>
+                        </div>
+                        <div class="account">
+                            <span>密码登录</span>
+                        </div>
+                    </div>
+                    <!-- 表单 -->
+                    <div class="login-form" style="margin-left: 24px;">
+                        <div class="login-form-item" id="login-number">
+                            <input type="tel" class="login-form-number" placeholder="请输入手机号" id="phone"
+                                oninput="checkInput()">
+                        </div>
+                        <div class="login-form-item">
+                            <input type="password" class="login-form-account" placeholder="内测码" id="code"
+                                oninput="checkInput()">
+                        </div>
+                        <div class="login-form-item-tips"></div>
+                        <div class="login-form-item-button">
+                            <button type="button" disabled="disabled" class="base-button" id="submitBtn">登录/注册</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="login-bottom">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 版权 -->
+    <div class="footer">
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
